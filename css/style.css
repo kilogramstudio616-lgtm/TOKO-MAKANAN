@@ -1,0 +1,222 @@
+body {
+    font-family: cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-bg {
+    background-color: rgb(114, 2, 114);
+}
+
+.main-color {
+    color: rgb(10, 155, 34) !important;
+    background-color: rgb(9, 20, 168) !important;
+}
+
+/* ===== PRELOADER ===== */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255,255,255,0.3);
+    border-top: 6px solid #ffc107;
+    border-radius: 50%;
+    animation: spin 100s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide preloader */
+#preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth; /* Ini yang membuat geserannya halus */
+}
+
+/* Opsional: Atur jarak atas jika ada navbar tetap (fixed) */
+#produk {
+  scroll-margin-top: 70px; /* Sesuaikan dengan tinggi navbar kamu */
+}
+
+/* banner */
+
+.banner {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../image/Banner1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* promo */
+
+.hovered-card {
+    transition: .3s;
+}
+
+.hovered-card:hover {
+    transform: scale(1.1);
+}
+
+.card-promo {
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.card-promo:hover {
+    transform: scale(1.1);
+}
+
+/* pelayanan */
+
+.pelayanan {
+    background-color: #700970;
+}
+
+.pelayanan-content {
+    transition: .3s;
+}
+
+.pelayanan-content:hover {
+    transform: scale(1.1);
+}
+
+.pelayanan .icon-circle {
+    width: 90px;
+    height: 90px;
+    border: solid 2px;
+}
+
+/* menu favorit */
+
+.menu-favorit {
+    background-color: rgba(243, 243, 243);
+}
+
+.menu-favorit-content {
+    transition: .3s;
+}
+
+.menu-favorit-content:hover {
+    transform: scale(1.1);
+}
+
+
+/* testimony */
+.testimony {
+    background-color: rgb(114, 2, 114) !important;
+}
+
+.testimony-card {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 16px;
+    padding: 28px;
+    transition: .3s;
+    height: 100%;
+}
+
+.testimony-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimony-card .quote-icon {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.testimony-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.testimony-card .author {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 12px;
+}
+
+.testimony-card p {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.testimony-card .stars {
+    color: #FFC107;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+/* subscribe */
+
+.subscribe-content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* produk banner */
+.produk-banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer {
+    background-color: #595959;
+}
+
+.footer .social-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.footer .social-icon:hover {
+    color: #FFC107;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #ffc107, #ff9800);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.btn-warning:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,193,7,0.4);
+}
+
+.pelayanan {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.testimony {
+    background: linear-gradient(135deg, #5f0a87, #a4508b);
+}
